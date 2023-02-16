@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * includes standard input output header
+ * main - Entry point
  *
- * main fuction - entry point for every code
- * return : always 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
