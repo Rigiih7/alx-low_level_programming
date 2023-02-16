@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * include standard input output header
  *
  *main fuction - entry point for every code
