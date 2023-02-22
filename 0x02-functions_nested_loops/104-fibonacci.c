@@ -7,10 +7,10 @@
   */
 int main(void)
 {
-	int i = 0;
+	int i = 1;
 	long j = 1, k = 2;
 
-	while (i < 98)
+	while (i < 99)
 	{
 		if (i == 0)
 			printf("%ld", j);
