@@ -9,5 +9,6 @@ int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 int _putchar(char c);
 int _strlen(const char *s);
+void _divide_by2(unsigned long int n);
 
 #endif
