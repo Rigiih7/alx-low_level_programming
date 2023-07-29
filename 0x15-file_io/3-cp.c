@@ -6,10 +6,10 @@
 #define BUFSIZE 1024
 
 /**
- * _close - close a file descriptor and print an error message upon failure
- * @fd: the file descriptor to close
+ * _close - function for closing a file descriptor
+ * @fd: file descriptor to be closed
  *
- * Return: 0 upon success, -1 upon failure
+ * Return: 0 on success, -1 on error
  */
 int _close(int fd)
 {
@@ -21,13 +21,13 @@ int _close(int fd)
 }
 
 /**
- * _read - read from a file and print an error message upon failure
- * @filename: the name of the file to read from
- * @fd: the file descriptor to read from
- * @buf: the buffer to write to
- * @count: the number of bytes to read
+ * _read - function for readding from a file
+ * @filename: name of file that will be read from
+ * @fd: file descriptor to be read from
+ * @buf: buffer to be writen to
+ * @count: number of bytes to read
  *
- * Return: The number of bytes read, or -1 upon failure
+ * Return: number of bytes read, -1 on error
  */
 ssize_t _read(const char *filename, int fd, char *buf, size_t count)
 {
@@ -40,13 +40,13 @@ ssize_t _read(const char *filename, int fd, char *buf, size_t count)
 }
 
 /**
- * _write - write to a file and print an error message upon failure
- * @filename: the name of the file to write to
- * @fd: the file descriptor to write to
- * @buf: the buffer to read from
- * @count: the number of bytes to write
+ * _write -function for writting to a file
+ * @filename: name of file to write to
+ * @fd: file descriptor that will be writen to
+ * @buf: buffer to be read from
+ * @count: number of bytes to write
  *
- * Return: The number of bytes written, or -1 upon failure
+ * Return: number of written bytes written, or -1 on error
  */
 ssize_t _write(const char *filename, int fd, const char *buf, size_t count)
 {
@@ -59,11 +59,11 @@ ssize_t _write(const char *filename, int fd, const char *buf, size_t count)
 }
 
 /**
- * main - copy a file's contents to another file
- * @argc: the argument count
- * @argv: the argument values
+ * main - function for copying the contents of a file to another
+ * @argc: number of arguments
+ * @argv: array of pointers to argument values
  *
- * Return: Always 1
+ * Return: 1
  */
 int main(int argc, const char *argv[])
 {
