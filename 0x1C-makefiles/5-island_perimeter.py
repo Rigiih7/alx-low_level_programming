@@ -19,3 +19,4 @@ def island_perimeter(grid):
                 if j < width - 1 and grid[i][j + 1] == 1:
                     adjacent += 1
     return spot * 4 - 2 * adjacent
+
