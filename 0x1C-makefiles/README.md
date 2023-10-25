@@ -98,7 +98,7 @@ You are not allowed to have a list of all the .o files
     gcc    -c -o main.o main.c
     gcc main.o school.o -o school
     julien@ubuntu:~/0x1C. Makefiles$
-     
+
 Repo:
 
 GitHub repository: alx-low_level_programming
@@ -125,6 +125,7 @@ RM: the program to delete files
 The all rule should recompile only the updated source files
 The clean, oclean, fclean, re rules should never fail
 You are not allowed to have a list of all the .o files
+
     julien@ubuntu:~//0x1C. Makefiles$ ls -1
     0-Makefile
     1-Makefile
@@ -170,7 +171,8 @@ You are not allowed to have a list of all the .o files
     gcc    -c -o main.o main.c
     gcc    -c -o school.o school.c
     gcc main.o school.o -o school
-    julien@ubuntu:~/0x1C. Makefiles$ 
+    julien@ubuntu:~/0x1C. Makefiles$
+     
 Repo:
 
 GitHub repository: alx-low_level_programming
