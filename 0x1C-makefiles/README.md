@@ -10,35 +10,37 @@ name of the executable: school
 rules: all
 The all rule builds your executable
 variables: none
-    julien@ubuntu:~/0x1C. Makefiles$ make -f 0-Makefile 
-    gcc main.c school.c -o school
-    julien@ubuntu:~/0x1C. Makefiles$ ./school 
-    j#0000000000000000000000000000000000000
-    j#000000000000000000@Q**g00000000000000
-    j#0000000000000000*]++]4000000000000000
-    j#000000000000000k]++]++*N#000000000000
-    j#0000000000000*C+++]++]++]J*0000000000
-    j#00000000000@+]++qwwwp=]++++]*00000000
-    j#0000000000*+++]q#0000k+]+]++]4#000000
-    j#00000000*C+]+]w#0000*]+++]+]++0000000
-    j#0000we+]wW000***C++]++]+]++++40000000
-    j#000000000*C+]+]]+]++]++]++]+q#0000000
-    j#0000000*]+]+++++++]++]+++]+++J0000000
-    j#000000C++]=]+]+]+]++]++]+]+]+]=000000
-    j#00000k+]++]+++]+]++qwW0000000AgW00000
-    j#00000k++]++]+]+++qW#00000000000000000
-    j#00000A]++]++]++]++J**0000000000000000
-    j#000000e]++]+++]++]++]J000000000000000
-    j#0000000A]++]+]++]++]++000000000000000
-    j#000000000w]++]+]++]+qW#00000000000000
-    j#00000000000w]++++]*0##000000000000000
-    j#0000000000000Ag]+]++*0000000000000000
-    j#00000000000000000we]+]Q00000000000000
-    j#0000000000000@@+wgdA]+J00000000000000
-    j#0000000000000k?qwgdC=]4#0000000000000
-    j#00000000000000w]+]++qw#00000000000000
-    "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    julien@ubuntu:~/0x1C. Makefiles$ 
+
+            julien@ubuntu:~/0x1C. Makefiles$ make -f 0-Makefile 
+            gcc main.c school.c -o school
+            julien@ubuntu:~/0x1C. Makefiles$ ./school 
+            j#0000000000000000000000000000000000000
+            j#000000000000000000@Q**g00000000000000
+            j#0000000000000000*]++]4000000000000000
+            j#000000000000000k]++]++*N#000000000000
+            j#0000000000000*C+++]++]++]J*0000000000
+            j#00000000000@+]++qwwwp=]++++]*00000000
+            j#0000000000*+++]q#0000k+]+]++]4#000000
+            j#00000000*C+]+]w#0000*]+++]+]++0000000
+            j#0000we+]wW000***C++]++]+]++++40000000
+            j#000000000*C+]+]]+]++]++]++]+q#0000000
+            j#0000000*]+]+++++++]++]+++]+++J0000000
+            j#000000C++]=]+]+]+]++]++]+]+]+]=000000
+            j#00000k+]++]+++]+]++qwW0000000AgW00000
+            j#00000k++]++]+]+++qW#00000000000000000
+            j#00000A]++]++]++]++J**0000000000000000
+            j#000000e]++]+++]++]++]J000000000000000
+            j#0000000A]++]+]++]++]++000000000000000
+            j#000000000w]++]+]++]+qW#00000000000000
+            j#00000000000w]++++]*0##000000000000000
+            j#0000000000000Ag]+]++*0000000000000000
+            j#00000000000000000we]+]Q00000000000000
+            j#0000000000000@@+wgdA]+J00000000000000
+            j#0000000000000k?qwgdC=]4#0000000000000
+            j#00000000000000w]+]++qw#00000000000000
+            "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            julien@ubuntu:~/0x1C. Makefiles$
+
 Repo:
 
 GitHub repository: alx-low_level_programming
@@ -55,11 +57,13 @@ The all rule builds your executable
 variables: CC, SRC
 CC: the compiler to be used
 SRC: the .c files
+
     julien@ubuntu:~/0x1C. Makefiles$ make -f 1-Makefile
     gcc main.c school.c -o school
     julien@ubuntu:~/0x1C. Makefiles$ make -f 1-Makefile
     gcc main.c school.c -o school
     julien@ubuntu:~/0x1C. Makefiles$
+
 Repo:
 
 GitHub repository: alx-low_level_programming
@@ -82,6 +86,7 @@ OBJ: the .o files
 NAME: the name of the executable
 The all rule should recompile only the updated source files
 You are not allowed to have a list of all the .o files
+
     julien@ubuntu:~/0x1C. Makefiles$ make -f 2-Makefile
     gcc    -c -o main.o main.c
     gcc    -c -o school.o school.c
@@ -92,7 +97,8 @@ You are not allowed to have a list of all the .o files
     julien@ubuntu:~/0x1C. Makefiles$ make -f 2-Makefile
     gcc    -c -o main.o main.c
     gcc main.o school.o -o school
-    julien@ubuntu:~/0x1C. Makefiles$ 
+    julien@ubuntu:~/0x1C. Makefiles$
+     
 Repo:
 
 GitHub repository: alx-low_level_programming
@@ -119,15 +125,15 @@ RM: the program to delete files
 The all rule should recompile only the updated source files
 The clean, oclean, fclean, re rules should never fail
 You are not allowed to have a list of all the .o files
-julien@ubuntu:~//0x1C. Makefiles$ ls -1
-0-Makefile
-1-Makefile
-2-Makefile
-3-Makefile
-school.c
-main.c
-main.c~
-m.h
+    julien@ubuntu:~//0x1C. Makefiles$ ls -1
+    0-Makefile
+    1-Makefile
+    2-Makefile
+    3-Makefile
+    school.c
+    main.c
+    main.c~
+    m.h
     julien@ubuntu:~/0x1C. Makefiles$ make -f 3-Makefile
     gcc    -c -o main.o main.c
     gcc    -c -o school.o school.c
@@ -232,7 +238,7 @@ Module and function must be documented
     5-main
     """
     island_perimeter = __import__('5-island_perimeter').island_perimeter
-    
+
     if __name__ == "__main__":
         grid = [
             [0, 0, 0, 0, 0, 0],
@@ -242,7 +248,7 @@ Module and function must be documented
             [0, 0, 0, 0, 0, 0]
         ]
         print(island_perimeter(grid))
-    
+
     guillaume@ubuntu:~/0x1C$ 
     guillaume@ubuntu:~/0x1C$ ./5-main.py
     12
